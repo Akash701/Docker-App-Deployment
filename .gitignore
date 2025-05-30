@@ -1,0 +1,3 @@
+ec2_key.pem
+.terraform
+data.tf
