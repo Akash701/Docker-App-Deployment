@@ -2,7 +2,7 @@ name: 🚀 Deploy Node App to EC2
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build-and-deploy:
@@ -35,4 +35,3 @@ jobs:
             docker stop myapp || true
             docker rm myapp || true
             docker run -d -p 8080:3000 --name myapp ${{ secrets.DOCKER_USERNAME }}/myapp
-
