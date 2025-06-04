@@ -34,4 +34,4 @@ jobs:
             docker pull ${{ secrets.DOCKER_USERNAME }}/myapp
             docker stop myapp || true
             docker rm myapp || true
-            docker run -d -p 8080:3000 --name myapp ${{ secrets.DOCKER_USERNAME }}/myapp
+            docker run -d -p 9090:3000 --name myapp ${{ secrets.DOCKER_USERNAME }}/myapp
